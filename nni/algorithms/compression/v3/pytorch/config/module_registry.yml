@@ -1,0 +1,15 @@
+default:
+  target:
+    parameter:
+      - weight
+      - bias
+    buffer:
+    special:
+      - input
+      - output
+Linear:
+  inherit:
+    - default
+Conv2d:
+  inherit:
+    - default
